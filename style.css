@@ -189,8 +189,8 @@ nav a{
 /* Alert section */
 .Alert{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     gap: 3rem;
     padding: 4rem 6rem;
     text-align: left;
@@ -238,4 +238,39 @@ nav a{
 .feedbackimg3 img {
     width: 100%;
     height: auto;
+}
+
+.feedback-profiles{
+    display: flex;
+}
+.studentfeedback{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.studentfeedbackhead{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.studentfeedbackpara{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+
+.profile-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
 }
