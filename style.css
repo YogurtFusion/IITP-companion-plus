@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
-    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -24,10 +23,12 @@ nav a{
     text-decoration: none;
     font-weight: bold;
 }
-.hero-image img{
-    width: 100%;
-    height: auto;
-    display: block;
+.hero-image {
+   background-image: url('assets/images/IITP-hero.png');
+   height: 600px;
+   width: 100%;
+   background-position: center center;
+   background-size: cover;
 }
 .hero {
     display: flex;
@@ -171,7 +172,7 @@ nav a{
 .feature-image{
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding-right: 1rem;
 }
 
@@ -267,10 +268,100 @@ nav a{
 }
 
 
+.feedback-profiles-again{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    
+}
+
 .profile-cards{
+    max-width: 20vw;
+    margin: auto;
+    
+}
+
+.pborder img{
+    border-radius: 100%;
+}
+
+
+
+/* connect */
+
+.connect{
+    padding-left: 100px;
+    padding-top: 224px;
+    /* display: flex; */
+   
+}
+
+.connectflex{
+    display: flex;
+    align-items: center;
+    gap: 195px;
+}
+
+
+
+.connect h4{
+    color: #555;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.connect h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.connect h2 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.connect-contacts{
+    margin-top: 112px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2rem;
+    gap: 40px;
+    
 }
+ .connect-mail{ 
+    color: black; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 4px; 
+} 
+
+.connect-mail p{
+    max-width: 15vw;
+}
+
+.connect-mail img {
+    width: 32px;
+    height: 32px;
+    max-width: 100%;
+}
+
+.connect-mail h3 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.connect-mail a {
+    text-decoration: none;
+    color: black;
+}
+
+.connect-office{
+    display: flex;
+    align-items: center;
+}
+
+
+.connect-imagemain{
+    margin-top: 112px;
+}
+
+
