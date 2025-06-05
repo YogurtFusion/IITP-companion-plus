@@ -52,9 +52,30 @@ header h1 {
   
 }
 
-.Main-card{
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+
+.header-card {
+  display: flex;
+  justify-content: space-between;
 }
+
+.header-card h1 {
+  padding-left: 15px;
+}
+
+.header-card h2 {
+  padding-left: 10px;
+}
+
+.header-card img{
+  width: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+}  
+
+.header-card img:hover {
+  transform: scale(1.08);
+}
+
 .card{
   display: flex;
   justify-content: space-between;
@@ -151,6 +172,13 @@ header h1 {
   padding: 24px;
   
 }
+
+.card:hover{
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+}
+
+
 
 @media (max-width: 768px) {
 

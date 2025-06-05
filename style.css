@@ -220,7 +220,8 @@ nav a:hover {
 }
 
 .feedbackimg{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: flex-start;
     padding: 4rem 6rem;
@@ -247,9 +248,11 @@ nav a:hover {
     height: auto;
 }
 
-.feedback-profiles{
-    display: flex;
-}
+
+
+
+
+
 .studentfeedback{
     display: flex;
     justify-content: space-between;
@@ -298,7 +301,7 @@ nav a:hover {
 .connect{
     padding-left: 100px;
     padding-top: 224px;
-    /* display: flex; */
+   
    
 }
 
