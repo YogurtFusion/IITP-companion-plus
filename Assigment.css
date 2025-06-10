@@ -53,6 +53,51 @@ nav img {
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    nav {
+        font-size: 1rem;
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        margin: 20px;
+
+
+    }
+
+    nav p {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+
+    }
+
+    nav img {
+        height: 70px;
+        margin-top: 8px;
+
+    }
+
+    nav .nav-head h1 {
+        text-align: center;
+        padding-right: 1rem;
+    }
+
+    /* .profile{
+        margin-right: 1rem; 
+    } */
+
+    .profile .svg {
+        height: 25px;
+        width: 25px;
+    }
+
+    .profile h3 {
+        font-size: 0.9rem;
+    }
+}
+
 
 
 .nav-head p {
