@@ -325,6 +325,14 @@ nav a:hover {
     max-width: 600px;
 }
 
+.abtn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
 @media (max-width: 768px) {
     .Alert {
         padding: 2rem;
@@ -347,6 +355,10 @@ nav a:hover {
         max-width: 300px;
         word-spacing: 2px;
 
+    }
+
+    .abtn {
+        margin: 2px auto;
     }
 }
 
