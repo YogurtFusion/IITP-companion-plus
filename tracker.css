@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
@@ -7,17 +8,20 @@
   font-style: normal;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 100px;
   /* border-bottom: 2px solid; */
-  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2); /* Gold hint */
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+  /* Gold hint */
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2); /* Gold hint */
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+  /* Gold hint */
 }
+
 header h1 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -28,12 +32,12 @@ header h1 {
 
 }
 
-.logo img{
+.logo img {
   width: 100px;
 }
 
 
-.profile svg{
+.profile svg {
   width: 40px;
   height: auto;
 }
@@ -44,12 +48,12 @@ header h1 {
   font-weight: 500;
 }
 
-.tracker{
+.tracker {
   padding: 60px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
-  
+
 }
 
 
@@ -66,17 +70,49 @@ header h1 {
   padding-left: 10px;
 }
 
-.header-card img{
+.header-card img {
   width: 30px;
   padding-right: 30px;
   cursor: pointer;
-}  
+}
 
 .header-card img:hover {
   transform: scale(1.08);
 }
 
-.card{
+
+@media (max-width: 768px) {
+  header {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .head-svg {
+    max-width: 20px;
+    width: 100%;
+    height: 20px;
+  }
+
+  header h3 {
+    font-size: 0.8rem;
+  }
+
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header img {
+    width: 100%;
+    max-width: 75px;
+  }
+
+
+}
+
+.card {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,37 +127,37 @@ header h1 {
 
 
 
-.left{
+.left {
   margin: 0px;
   padding: 15px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   width: 200px;
-  
+
   /* width: 100%; */
   /* height: 100%; */
 }
 
-.left h3{
-  font-size:  1.2rem;
+.left h3 {
+  font-size: 1.2rem;
   color: #222;
 }
 
-.left p{
+.left p {
   font-size: 1rem;
   color: #666;
 }
 
 .right {
- display: flex;
- gap: 50px;
- justify-content: space-between;
- align-items: flex-end;
- flex-direction: column;
- padding: 15px;
- margin: 15px;
- width: 370px;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 15px;
+  margin: 15px;
+  width: 370px;
 }
 
 .right .dot {
@@ -143,80 +179,150 @@ header h1 {
   font-size: 15px;
 }
 
-.time{
+.time {
   color: #5555ff;
   font-size: 15px;
 }
 
+/* mediaqureey */
+@media (max-width: 768px) {
+  .tracker {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 
-.Map{
+  }
+
+  .tracker {
+    margin: 20px 0px;
+  }
+
+
+  .left {
+    gap: 0px;
+  }
+
+  .right {
+    gap: 10px;
+  }
+
+ 
+
+  .time {
+    font-size: 0.8rem;
+
+  }
+
+  .card h3 {
+    font-size: 0.8rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
+
+}
+
+
+
+.Map {
 
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
   padding: 60px;
-  
+
 }
+
 
 
 
 .bus-map,
-.train-map{
-  margin: auto;
+.train-map {
+  margin: 0px auto;
   width: 70vw;
   height: 80vh;
   border-radius: 15px;
   box-sizing: border-box;
-   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   padding: 24px;
-  
+
 }
 
-.card:hover{
+.card:hover {
   transform: scale(1.02);
   transition: 0.3s ease-in-out;
+}
+
+.none {
+  display: none;
 }
 
 
 
 @media (max-width: 768px) {
+  .Map {
+    flex-direction: column;
 
-  .bus-map,.train-map{
-    padding: 16px;
   }
-  
-} 
+
+  .bus-map,
+  .train-map {
+    width: 70vw;
+    height: auto;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+
+  .none {
+    display: block;
+    margin: 0px auto;
+  }
+
+
+
+}
 
 .bus-map img,
-.train-map img{
+.train-map img {
   width: 100%;
+  object-fit: cover;
+  /* max-width: 300px; */
+  /* height: auto; */
   height: 100%;
   object-fit: cover;
+  padding: 0;
+  margin: 0;
+  box-sizing: 15px;
 }
 
 
-.Schedule{
+.Schedule {
   margin-top: 100px;
   padding: 60px;
   margin: 100px 60px;
 }
 
-.head{
+.head {
   padding: 60px;
 }
-.schedule svg{
+
+.schedule svg {
   width: 40px;
   /* padding-left: 60px; */
 
 
 }
 
-.head{
+.head {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  
+
 }
 
 .schedule-body {
@@ -229,7 +335,7 @@ header h1 {
 
 
 .Schedule-index,
-.schedule-bus{
+.schedule-bus {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -239,17 +345,24 @@ header h1 {
 
 
 
-.Schedule-index{
+.Schedule-index {
 
-  border-bottom: 2px solid #E5E4E2	;
+  border-bottom: 2px solid #E5E4E2;
   margin: 0;
   padding: 0;
-  
+
 }
 
 
-.gap{
+.gap {
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .schedule h3 {
+    font-size: 0.8rem;
+  }
+
 }
