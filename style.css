@@ -37,6 +37,7 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
 nav img {
     width: 100px;
 }
@@ -56,9 +57,11 @@ nav img {
         display: block;
         padding: 12px;
     }
+
     nav a {
         font-size: 15px;
     }
+
     nav img {
         width: 75px;
     }
@@ -93,6 +96,11 @@ nav img {
     flex: 1;
     min-width: 300px;
     max-width: 600px;
+}
+
+.hero a {
+    color: white;
+    text-decoration: none;
 }
 
 .hero-left h1 {
@@ -276,6 +284,11 @@ nav img {
 .feature-convenience,
 .feature-track {
     padding: 4rem 6rem;
+}
+
+.feature a {
+    color: white;
+    text-decoration: none;
 }
 
 @media (max-width: 768px) {
