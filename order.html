@@ -1,128 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Campus Food Pickup</title>
-  <link rel="stylesheet" href="style.css"/>
-  <style>
-    * {
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  margin: 0;
-  padding: 1rem;
-  background: #f9f9f9;
-  color: #333;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.canteen-select {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  max-width: 1000px;
-  margin: 0 auto 3rem;
-}
-
-.menu-item {
-  background: #fff;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  text-align: center;
-}
-
-.menu-item button {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  background: #ccc;
-  color: #fff;
-  border-radius: 8px;
-  cursor: not-allowed;
-}
-
-.cart {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 1.5rem;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-.cart h2 {
-  margin-top: 0;
-}
-
-.cart button {
-  width: 100%;
-  margin-top: 1rem;
-  padding: 0.75rem;
-  background: #999;
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-}
-
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="order/order.css">
 </head>
+
 <body>
+    <header>
 
-  <header>
-    <h1>Order Your Campus Meal</h1>
-    <p>Select a canteen and place your pickup order</p>
-  </header>
+        <nav>
+            <div class="nav-head">
+                <a href="index.html">
+                    <h2>IIT companion +</h2>
+                </a>
+            </div>
 
-  <section class="canteen-select">
-    <label for="canteen">Choose a Canteen:</label>
-    <select id="canteen">
-      <option>-- Select --</option>
-      <option>Main Canteen</option>
-      <option>Café Mocha</option>
-      <option>South Block Food Court</option>
-    </select>
-  </section>
+            <div class="nav-body">
+                <p><a href="">Track order</a></p>
+            </div>
+        </nav>
+    </header>
 
-  <main class="menu-grid">
-    <article class="menu-item">
-      <h3>Veg Sandwich</h3>
-      <p>₹40</p>
-      <button disabled>Add to Cart</button>
-    </article>
-    <article class="menu-item">
-      <h3>Maggie</h3>
-      <p>₹35</p>
-      <button disabled>Add to Cart</button>
-    </article>
-    <article class="menu-item">
-      <h3>Cold Coffee</h3>
-      <p>₹50</p>
-      <button disabled>Add to Cart</button>
-    </article>
-    <!-- Add more items similarly -->
-  </main>
+    <section class="order">
 
-  <aside class="cart">
-    <h2>Your Order</h2>
-    <ul>
-      <li>Veg Sandwich × 1 – ₹40</li>
-    </ul>
-    <label>Pickup Time: <input type="time" disabled></label>
-    <button disabled>Proceed to Confirm</button>
-  </aside>
+        <div class="order-head">
+            <h1>Order from Campus</h1>
+            <p>Fresh meals delivered to your dorm or ready for pickup at your favorite campus spots</p>
+        </div>
+
+        <div class="restaurants-cards">
+
+            <!-- card-1  -->
+
+            <div class="card">
+                <a href="Full_Menu.html">
+
+                    
+                    <img src="assets/images/place-holder-food-1.png" alt="place_holeder_food">
+                    <div class="main-card">
+                        <h2>🍽️Main Canteen</h2>
+                        <div class="info">
+                            <div class="meal-info">
+                                <p>Full meals, snacks, and beverages</p>
+                                <p class="p-card">Open: 7:00 AM - 10:00 PM</p>
+                            </div> 
+                            
+                            <div class="dilevery-time">
+                                <p> 20 mins</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </a>
+            </div>
+        
+            <!-- card-2  -->
+
+            <div class="card">
+                <a href="coffee_menu.css">
+
+                    <img src="assets/images/place-holder-food-2.png" alt="place_holeder_food">
+                    <div class="main-card">
+                        <h2>☕Coffee Corner</h2>
+                        <div class="info">
+                            <div class="meal-info">
+                                <p>Fresh coffee, tea, and light snacks</p>
+                                <p class="p-card">Open: 8:00 AM - 8:00 PM</p>
+                            </div>
+                            
+                            <div class="dilevery-time">
+                                <p> 10 mins</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </a>
+            </div>
+            <!-- card-3  -->
+
+            <div class="card">
+                <a href="quick_bites_menu.html">
+                    
+                    <img src="assets/images/place-holder-food-3.jpg" alt="place_holeder_food">
+                    <div class="main-card">
+                        <h2>🥪Quick Bites</h2>
+                        <div class="info">
+                            <div class="meal-info">
+                                <p>Sandwiches, wraps, and fast food</p>
+                                <p class="p-card">Open: 9:00 AM - 9:00 PM</p>
+                            </div>
+                            
+                            <div class="dilevery-time">
+                                <p> 15 mins</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </a>
+            </div>
+
+
+            <!-- card-4  -->
+
+            <div class="card">
+                <a href="sweet_treats.html">
+
+                    <img src="assets/images/place-holder-food-4.jpg" alt="place_holeder_food">
+                    <div class="main-card">
+                        <h2>🍨Sweet Treats</h2>
+                        <div class="info">
+                            <div class="meal-info">
+                                <p>Ice cream, desserts, and sweets</p>
+                                <p class="p-card">Open: 12:00 PM - 10:00 PM</p>
+                            </div>
+                            
+                            <div class="dilevery-time">
+                                <p> 12 mins</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+
+    </section>
 
 </body>
+
 </html>
+
+
