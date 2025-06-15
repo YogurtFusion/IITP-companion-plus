@@ -252,7 +252,7 @@ nav img {
     cursor: pointer;
 }
 
-.feature-buttons .black:hover{
+.feature-buttons .black:hover {
     background-color: transparent;
     border: 2px solid black;
     cursor: pointer;
