@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirm</title>
+    <link rel="stylesheet" href="order/confirm.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="order-head">
+
+            <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <!-- Gradient Background Circle -->
+                <defs>
+                    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#34d399;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+
+                <!-- Circle Background -->
+                <circle cx="40" cy="40" r="40" fill="url(#greenGradient)" />
+
+                <!-- Checkmark -->
+                <polyline points="24,40 34,50 56,28" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <div class="order-htext">
+
+                <h1> Thank you for your order!</h1>
+                <p>Your order has been confirmed and will be processed shortly.</p>
+            </div>
+
+        </div>
+
+        <div class="order-details">
+            <div class="details">
+                <p><span>Order Number:</span></p> 
+                <span>#ORD-2024-001234</span>
+            </div>
+
+            <div class="details">
+               <p> <span>Order Date:</span> </p> 
+                <span>June 25, 2025</span>
+            </div>
+
+            <div class="details">
+                <p><span>Estimated Delivery:</span></p> 
+                <span> 12-15mins</span>
+            </div>
+        </div>
+
+        <div class="order-summary">
+            <h1>Order Summary</h1>
+            <div class="summary">
+                <span>item-1</span>
+                <span>₹0.00</span>
+            </div>
+
+
+            <div class="summary">
+                <span>item-2</span>
+                <span>₹0.00</span>
+            </div>
+
+
+            <div class="summary">
+
+                <h2><span>Total</span></h2>
+                <span>₹0.00</span>
+            </div>
+
+        </div>
+
+        <a href="order.html">
+            <button> Continue Shopping</button>
+        </a>
+
+
+
+    </main>
+</body>
+
+</html>

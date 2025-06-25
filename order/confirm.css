@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.85rem;
+    line-height: 1.75rem;
+    color: #86868b;
+}
+
+h1 {
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 1.75rem ;
+
+}
+
+main {
+    margin: 100px auto;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    padding: 50px 40px;
+
+}
+
+main button {
+    background-color: #007aff;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+    cursor: pointer;
+}
+
+main button:hover {
+    transform: translateY(-1px);
+    background-color: #0056cc;
+    box-shadow:  0 4px 20px rgba(0, 122, 255, 0.3);
+}
+
+
+.order-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 60px;
+}
+
+.order-htext {
+    text-align: center;
+}
+
+.order-htext h1 {
+    margin-bottom: 0.5rem;
+}
+
+
+.order-details {
+    background-color: #e8f4fd;
+    border-radius: 12px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f5f6f7;
+    border-radius: 12px;
+}
+
+.order-summary h1 {
+    margin-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.summary {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 150px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+
